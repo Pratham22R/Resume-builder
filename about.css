@@ -2,41 +2,44 @@
 
 * {
     margin: 0;
-    padding: 0 ;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    font-family: 'Poppins',sans-sherif;
+    font-family: 'Poppins', sans-sherif;
 
 }
 
-:root{
-    --bg-color:#055B5C;
-    --second-bg-color:#08979D;
-    --text-color:#b2e0e0;
-    --main-color:#CCABD8;
+:root {
+    --bg-color: #055B5C;
+    --second-bg-color: #08979D;
+    --text-color: #b2e0e0;
+    --main-color: #CCABD8;
 }
-html{
-    font-size:62.5% ;
+
+html {
+    font-size: 62.5%;
     overflow-x: hidden;
 }
 
-body{
+body {
     background: var(--bg-color);
     color: var(--text-color);
-    
+
 }
-section{
+
+section {
     min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
-.header{
+
+.header {
     position: fixed;
     top: 0;
     left: 0;
-    width:100%;
+    width: 100%;
     padding: 2rem 9%;
     background: var(--bg-color);
     display: flex;
@@ -44,45 +47,52 @@ section{
     align-items: center;
     z-index: 100;
 }
-.header.sticky{
-    border-bottom: .1rem solid rgba(0,0,0,.2);
+
+.header.sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
 }
-.logo{
+
+.logo {
     font-size: 2.5rem;
     color: var(--text-color);
     font-weight: 600;
     cursor: default;
 }
+
 .navbar a {
     font-size: 1.7rem;
     color: var(--text-color);
     margin-left: 4rem;
     transition: .3s;
 }
+
 .navbar a:hover,
-.navbar a.active{
+.navbar a.active {
     color: var(--main-color);
 }
-.about_project{
+
+.about_project {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5rem;
     background: var(--bg-color);
 }
-.about_project-img img{
+
+.about_project-img img {
     width: 40vw;
 }
 
-.heading{
+.heading {
     text-align: center;
     font-size: 4.5rem;
     position: absolute;
     left: 26%;
     bottom: 70%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.about_team{
+
+.about_team {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,15 +100,16 @@ section{
     background: var(--bg-color);
 }
 
-.heading1{
+.heading1 {
     text-align: center;
     font-size: 4.5rem;
     position: absolute;
     left: 21%;
     top: 130%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-.about_project{
+
+.about_project {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,26 +117,35 @@ section{
     background: var(--bg-color);
 
 }
-.about_project-img img{
-    width: 100px; /* Set the width of the image to 200 pixels */
-    height: 100px; /* Maintain the aspect ratio */
+
+.about_project-img img {
+    width: 100px;
+    /* Set the width of the image to 200 pixels */
+    height: 100px;
+    /* Maintain the aspect ratio */
 }
-.project-content p{
+
+.project-content p {
     text-align: center;
     font-size: 1.8rem;
 
 }
-.about_team-img img{
-    width: 5px; /* Set the width of the image to 200 pixels */
-    height: 5px; /* Maintain the aspect ratio */
+
+.about_team-img img {
+    width: 5px;
+    /* Set the width of the image to 200 pixels */
+    height: 5px;
+    /* Maintain the aspect ratio */
     width: fit-content;
 }
-.team-content p{
+
+.team-content p {
     text-align: center;
     font-size: 1.8rem;
 
 }
-.footer{
+
+.footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -133,10 +153,12 @@ section{
     padding: 2rem 9%;
     background: var(--second-bg-color);
 }
-.footer-text p{
-    font-size: 2.6rem;
+
+.footer-text p {
+    font-size: 1.4rem;
 }
-.footer-icontop a{
+
+.footer-icontop a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -145,13 +167,61 @@ section{
     border-radius: 1.8rem;
     transition: .5s ease;
 }
-.footer-icontop a:hover{
+
+.footer-icontop a:hover {
     box-shadow: 0 0 1rem var(--main-color);
 }
-.footer-icontop a i{
-    font: size 1.4rem; 
-    color: #ffffff;
+
+.footer-icontop a img {
+    font: size 1.4rem;
+    color: rgb(255, 255, 255);
 }
 
+@media(max-width:1400px) {
+    .team-content p {
+        text-align: center;
+        font-size: 1.8rem;
+    }
 
+    .footer-text p {
+        font-size: 1.4rem;
+    }
+}
 
+@media(max-width:1360px) {
+    .team-content p {
+        font-size: 1.4rem;
+    }
+
+}
+
+@media(max-width:1330px) {
+    .team-content p {
+        font-size: 1.6rem;
+    }
+
+}
+
+@media(max-width:1300px) {
+    .project-content p {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    .team-content p {
+        font-size: 1.5rem;
+    }
+
+    .heading1 {
+        text-align: center;
+        font-size: 4.5rem;
+        position: absolute;
+        left: 19%;
+        top: 130%;
+        transform: translate(-50%, -50%);
+    }
+
+    .heading {
+        left: 25%;
+    }
+}
