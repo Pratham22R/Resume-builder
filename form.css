@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --bg-color: #055B5C;
+    --second-bg-color: #08979D;
+    --text-color: #b2e0e0;
+    --main-color: #CCABD8;
+}
+
+
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+
+}
+.header h2{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100%;
+    padding: 1rem 15% 15rem ;
+
+}
+.info-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+    
+}
+.name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;  
+}
+.contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;  
+}
+.contact .col-3{
+    width: 100%;
+}
+.form-control {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+    background: #CCABD8;
+    border: none;
+    color:black;
+    text-align: start;
+    border-radius: 15px;
+}
+.address{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;  
+}
+.address .col-5{
+    width: 100%;
+}
+.address-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;  
+}
+.form-control-1  {
+    width: 470px; 
+    height: 150px;
+    padding: 1rem;
+    font-size: 1rem;
+    background: #CCABD8;
+    border: none;
+    color:black;
+    text-align: start;
+    border-radius: 15px;
+}
+.choose{
+    padding-bottom: 5rem;
+    flex-direction: row;
+}
+
+.template-select {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px; 
+    width: 200%;
+    padding: 1rem;
+    font-size: 1rem;
+    background: #CCABD8;
+    border: none;
+    color:black;
+    text-align: start;
+    border-radius: 15px;
+    border-color: #08979D;
+}
+.submit button{
+    width: 100%;
+    padding: 15px 30px; 
+    font-size: 1rem;
+    background: #CCABD8;
+    border: none;
+    color:black;
+    text-align: start;
+    border-radius: 15px;
+    cursor: pointer;
+    
+}
